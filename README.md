@@ -123,9 +123,9 @@
 <br><br/>
 # 书源相关链接
 <br><br/>
-全网搜书(Pro V30)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json)
+全网搜书(Pro V30-3)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json)
 <br><br/>
-通用书源(V13)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json)
+通用书源(V13-3)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json)
 <br><br/>
 ```
 导入“通用书源”后，将书籍详情页或目录页链接粘贴到书架右上角菜单的“添加网址”处，确认后书籍将直接出现在书架，点进书籍即可阅读。
@@ -178,6 +178,25 @@
 <br><br/>
 <br><br/>
 # 更新日志
+```
+通用书源V13-3、全网搜书Pro V30-3
+───────
+①全面加强正文规则，旧版本存在正文内容过少而正文内容之外某个元素中所有a标签文本累积超过正文字数时，虽然不会将a文本作为正文，但会将包含a标签的父元素的其它标签中的文本当做正文一部分，导致正文出现额外内容的问题。
+
+现对这种情况进行分析处理，以后同样现象再也不会出现了。
+
+②针对那种有些章节正文全是文字没有图片而有些章节正文全是图片没有文字的书籍。
+
+旧版本为了加速正文获取而将首次查询表达式向后传递，导致书籍要么只能看图片章节，要么只能看文字章节。
+
+现改为根据首次得到的正文元素反向构造出专门识别正文所在元素的jsoup表达式，构造不出表达式或构造出的表达式不够精确时才会用内置的识别法进行识别。
+
+从而使得那种有些章节正文全是文字没有图片而有些章节正文全是图片没有文字的书籍中两种章节都能正常阅读了。
+
+③目录列表规则，增强屏蔽那种纯粹感谢书友的章节的能力，既然感谢内容又有正文的不会被屏蔽
+
+④针对个别以图片形式显示文字的网站的识别能力，避免有些章节有内容有些章节无内容的问题。
+```
 ```
 通用书源V12-5、全网搜书Pro V29-5
 ───────
