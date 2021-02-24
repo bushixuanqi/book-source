@@ -1,0 +1,381 @@
+[
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "下载,图文,精校,📑已检",
+    "bookSourceName": "贼吧网",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.zei8.me",
+    "customOrder": -38952,
+    "enabled": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1612201844820,
+    "ruleBookInfo": {
+      "author": "@css:small:contains(书籍作者：)+span@text",
+      "canReName": "",
+      "coverUrl": "tag.img.0@src",
+      "intro": "@js:book.intro+/邪恶漫画/.test(book.kind)?'':'<br>https://www.zei8.me{{@@text.本地高速下载@href}}'",
+      "kind": "class.place@tag.a.-1@text",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "",
+      "wordCount": "@css:small:matches(是否连载|小说大小)+span@text"
+    },
+    "ruleContent": {
+      "content": "class.content@html||text.电信高速下载@href@js:/^http:/.test(result)?'<img src=\"'+book.coverUrl+'\"/>下载链接：'+result+'<br>───────<br>'+book.intro:result",
+      "nextContentUrl": "",
+      "replaceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "",
+      "bookList": "class.item",
+      "bookUrl": "tag.a@href",
+      "intro": "class.intro@html",
+      "kind": "",
+      "name": "tag.a@text##[^《]*《|》[^\\n]*"
+    },
+    "ruleToc": {
+      "chapterList": "text.本地高速下载||class.content",
+      "chapterName": "@js:'正文预览'",
+      "chapterUrl": "href@js:''+result?result:baseUrl",
+      "isVip": ""
+    },
+    "searchUrl": "https://www.zei8.me/e/sch/index.php?page={{page-1}}&keyboard={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "下载,精校,📑已检",
+    "bookSourceName": "精校吧",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.jingjiaoba.com",
+    "customOrder": -38951,
+    "enabled": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1612199364060,
+    "ruleBookInfo": {
+      "author": "class.post-title@text##作者:(\\S+) ##$1###",
+      "coverUrl": "tag.img.0@lazydata-src",
+      "intro": "text.【内容简介】@html",
+      "kind": "[rel=\"tag\"]@text",
+      "name": "",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "@js:book.intro+'<br>'+chapter.url",
+      "replaceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "h3 a@text##作者:(\\S+) ##$1###",
+      "bookList": ".result",
+      "bookUrl": "text.百度快照@href",
+      "name": "h3 a@text##[^《》]+(?=》)##$0###"
+    },
+    "ruleToc": {
+      "chapterList": "a.wb-btn-download",
+      "chapterName": "@js:'下载链接'",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.baidu.com/s?pn=<0,{{page*10}}>&wd={{key+' site:www.jingjiaoba.com'}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "精校,修复,📑已检",
+    "bookSourceName": "当书网[分页]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.downbook.com",
+    "customOrder": -38950,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::https://www.downbook.org/TXT/list4_{{page}}.html\n武侠仙侠::https://www.downbook.org/TXT/list5_{{page}}.html\n都市重生::https://www.downbook.org/TXT/list6_{{page}}.html\n历史军事::https://www.downbook.org/TXT/list7_{{page}}.html\n恐怖推理::https://www.downbook.org/TXT/list8_{{page}}.html\n科幻网游::https://www.downbook.org/TXT/list9_{{page}}.html\n都市言情::https://www.downbook.org/TXT/list10_{{page}}.html\n古代言情::https://www.downbook.org/TXT/list11_{{page}}.html\n穿越重生::https://www.downbook.org/TXT/list12_{{page}}.html\n玄幻仙侠::https://www.downbook.org/TXT/list13_{{page}}.html\n青春同人::https://www.downbook.org/TXT/list14_{{page}}.html\n网游科幻::https://www.downbook.org/TXT/list15_{{page}}.html\n现代耽美::https://www.downbook.org/TXT/list27_{{page}}.html\n古代架空::https://www.downbook.org/TXT/list28_{{page}}.html\n重生穿越::https://www.downbook.org/TXT/list29_{{page}}.html\n玄幻科幻::https://www.downbook.org/TXT/list30_{{page}}.html\nbl同人::https://www.downbook.org/TXT/list31_{{page}}.html\ngl百合::https://www.downbook.org/TXT/list32_{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6\"}",
+    "lastUpdateTime": 1612197800141,
+    "ruleBookInfo": {
+      "author": "##作者：</b>([^<]+)##$1##",
+      "coverUrl": ".cl1 img@src",
+      "intro": ".jj@html",
+      "kind": "##类别：</b>([^<]+)##$1##",
+      "lastChapter": "##状态：</b>([^<]+)##$1##",
+      "tocUrl": "##(/book\\.[^\"]+)##$1,{\"charset\": \"gbk\"}##",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "@js:r=java.getElement(\".main\");\nr.select(\"h1,span,div[style]\").remove();r",
+      "imageStyle": "0",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "h1:not(:matches(^\\d+、))@ownText##作者：| 大小.*",
+      "bookList": ".sear li||.listl li",
+      "bookUrl": "h1 a@href",
+      "coverUrl": "tag.img@src",
+      "intro": "tag.p@ownText##.*收藏数：\\d+|.*积分：\\d+|下载阅读.*",
+      "kind": "h1@text##[^\\[\\]]+(?=\\])|完结|金推##$0###",
+      "lastChapter": "",
+      "name": "h1 a@text##\\[[^\\[\\]]+\\]|完结\\+番外|金推",
+      "wordCount": "##：([\\d.]+ [KMG]B)##$1##"
+    },
+    "ruleToc": {
+      "chapterList": "@js:r=String(result).match(/[^\"]+(?=\">最后1页)/)[0].split(/yeshu=/);\nfor(list=[],n=Number(r[1]),i=0;i<=n;i++)list.push({n:'第'+[i+1]+'页',u:r[0]+\"yeshu=\"+i+',{\"charset\": \"gbk\"}'});list",
+      "chapterName": "n",
+      "chapterUrl": "u",
+      "isVip": "",
+      "nextTocUrl": "",
+      "updateTime": ".jj p span:eq(0)@text"
+    },
+    "searchUrl": "https://www.downbook.org/search.asp?word={{key}}&page={{page}},{\"charset\": \"gbk\"}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "精校,📑已检",
+    "bookSourceName": "当书网[不分页]",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.downbook.org",
+    "customOrder": -38949,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "玄幻奇幻::/TXT/list4_{{page}}.html\n武侠仙侠::/TXT/list5_{{page}}.html\n都市重生::/TXT/list6_{{page}}.html\n历史军事::/TXT/list7_{{page}}.html\n恐怖推理::/TXT/list8_{{page}}.html\n科幻网游::/TXT/list9_{{page}}.html\n都市言情::/TXT/list10_{{page}}.html\n古代言情::/TXT/list11_{{page}}.html\n穿越重生::/TXT/list12_{{page}}.html\n玄幻仙侠::/TXT/list13_{{page}}.html\n青春同人::/TXT/list14_{{page}}.html\n网游科幻::/TXT/list15_{{page}}.html\n现代耽美::/TXT/list27_{{page}}.html\n古代架空::/TXT/list28_{{page}}.html\n重生穿越::/TXT/list29_{{page}}.html\n玄幻科幻::/TXT/list30_{{page}}.html\nbl同人::/TXT/list31_{{page}}.html\ngl百合::/TXT/list32_{{page}}.html",
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6\"}",
+    "lastUpdateTime": 1612197793769,
+    "ruleBookInfo": {
+      "author": "##作者：</b>([^<]+)##$1##",
+      "coverUrl": ".cl1 img@src",
+      "intro": ".jj@html",
+      "kind": "##类别：</b>([^<]+)##$1##",
+      "lastChapter": "##状态：</b>([^<]+)##$1##",
+      "tocUrl": "##(/book\\.[^\"]+)##$1,{\"charset\": \"gbk\"}##",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "@js:r=java.getElement(\".main\");\nr.select(\"h1,span,div[style]\").remove();r",
+      "imageStyle": "0",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "name": ""
+    },
+    "ruleSearch": {
+      "author": "h1:not(:matches(^\\d+、))@ownText##作者：| 大小.*",
+      "bookList": ".sear li||.listl li",
+      "bookUrl": "h1 a@href",
+      "coverUrl": "tag.img@src",
+      "intro": "tag.p@ownText##.*收藏数：\\d+|.*积分：\\d+|下载阅读.*",
+      "kind": "h1@text##[^\\[\\]]+(?=\\])|完结|金推##$0###",
+      "lastChapter": "",
+      "name": "h1 a@text##\\[[^\\[\\]]+\\]|完结\\+番外|金推",
+      "wordCount": "##：([\\d.]+ [KMG]B)##$1##"
+    },
+    "ruleToc": {
+      "chapterList": "text.最后1页",
+      "chapterName": "{{\"全文阅读\"}}",
+      "chapterUrl": "href@js:m=result.match(/(.+=)(\\d+)$/);\nm[1]+(Number(m[2])+1)+',{\"charset\": \"gbk\"}'",
+      "isVip": "",
+      "nextTocUrl": "",
+      "updateTime": ".jj p span:eq(0)@text"
+    },
+    "searchUrl": "https://www.downbook.org/search.asp?word={{key}}&page={{page}},{\"charset\": \"gbk\"}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "下载,精校,📑已检",
+    "bookSourceName": "免费小说网.freexiaoshuo",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.freexiaoshuo.com",
+    "customOrder": -38948,
+    "enabled": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1612197436250,
+    "ruleBookInfo": {
+      "name": "",
+      "tocUrl": ""
+    },
+    "ruleContent": {
+      "content": "class.dl_kk_info@tag.ul.0@html&&class.jtsize@tag.img@html&&id.content_all@html&&class.dl_kkbd_ccc@tag.a@href",
+      "replaceRegex": "##/plus##http://www.freexiaoshuo.com/plus",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "bookList": ".result",
+      "bookUrl": "text.百度快照@href",
+      "name": "h3 a@text##[^《》]+(?=》)##$0###"
+    },
+    "ruleToc": {
+      "chapterList": "#bestUrl",
+      "chapterName": "@js:'下载链接'",
+      "chapterUrl": "http://www.freexiaoshuo.com{{@@href}}"
+    },
+    "searchUrl": "https://www.baidu.com/s?pn=<0,{{page*10}}>&wd={{key+' site:www.freexiaoshuo.com'}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "下载,精校,📑已检",
+    "bookSourceName": "知轩藏书.zxcs",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://www.zxcs.me",
+    "bookUrlPattern": "",
+    "customOrder": -38947,
+    "enabled": true,
+    "enabledExplore": true,
+    "exploreUrl": "都市::http://www.zxcs.me/sort/23<,/page/{{page}}>\n武侠::http://www.zxcs.me/sort/36<,/page/{{page}}>\n仙侠::http://www.zxcs.me/sort/37<,/page/{{page}}>\n奇幻::http://www.zxcs.me/sort/38<,/page/{{page}}>\n玄幻::http://www.zxcs.me/sort/39<,/page/{{page}}>\n科幻::http://www.zxcs.me/sort/40<,/page/{{page}}>\n灵异::http://www.zxcs.me/sort/41<,/page/{{page}}>\n历史::http://www.zxcs.me/sort/42<,/page/{{page}}>\n军事::http://www.zxcs.me/sort/43<,/page/{{page}}>\n竞技::http://www.zxcs.me/sort/44<,/page/{{page}}>\n游戏::http://www.zxcs.me/sort/45<,/page/{{page}}>\n次元::http://www.zxcs.me/sort/55<,/page/{{page}}>",
+    "header": "",
+    "lastUpdateTime": 1612261900085,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "img[title]@src",
+      "init": "",
+      "intro": "@js:\ntag=['仙', '粮', '干', '枯', '毒'];\nicon=['🌕', '🌖', '🌗', '🌘', '🌑'];\n\"　　\"+String(java.ajax(baseUrl.replace(/.+\\//,'http://www.zxcs.me/content/plugins/cgz_xinqing/cgz_xinqing_action.php?action=show&id='))).split(',').map((v, i)=>icon[i]+tag[i]+'：'+v).join(\" \")+java.get(\"i\")",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "tocUrl": "",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "@js:content=java.getString(\".plus_l li:not(:has(span))@html\",false)+'<br>━━━━━<br>'+java.getElements(\".downfile a\")\n.toArray()\n.map(a => '【' + a.text() + '】' + a.attr('href'))\n.join('\\n');",
+      "nextContentUrl": "",
+      "sourceRegex": "",
+      "webJs": ""
+    },
+    "ruleExplore": {
+      "author": "",
+      "bookList": "",
+      "bookUrl": "",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "",
+      "lastChapter": "",
+      "name": "",
+      "wordCount": ""
+    },
+    "ruleSearch": {
+      "author": "$4",
+      "bookList": ":<dt>[^\"]+\"([^\"]+)[^《]+《([^》]+)》（([^）]+)[^：]+：([^<]+)[^：]+：([^【]+)[^：]+：([^<]+)[^：]+[^>]+>([^<]+)[^\"]+[^>]+>([^<]+)(?:[^：]+：){2}([^<]+)",
+      "bookUrl": "$1",
+      "coverUrl": "",
+      "intro": "$6##优质订阅书源[\\S\\s]+\n@js:java.put(\"i\",result.replace(/(?:　|&nbsp;)+/,\"\\n\"))\n##\\s",
+      "kind": "$7\n$8",
+      "lastChapter": "$3｜$9",
+      "name": "$2",
+      "wordCount": "$5"
+    },
+    "ruleToc": {
+      "chapterList": "h1",
+      "chapterName": "##《([^》]+)##$1##",
+      "chapterUrl": "@js:baseUrl.replace(/post\\//,'download.php?id=')",
+      "nextTocUrl": "",
+      "updateTime": ""
+    },
+    "searchUrl": "http://www.zxcs.me?keyword={{key}}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "精校,📑已检",
+    "bookSourceName": "知轩藏书.su74",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.su74.com",
+    "bookUrlPattern": "",
+    "customOrder": -38946,
+    "enabled": true,
+    "enabledExplore": true,
+    "lastUpdateTime": 1612263812491,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "coverUrl": "tag.img.0@data-original",
+      "intro": "class.jj@text##(?:&nbsp;|\\s){2,}##<br>"
+    },
+    "ruleContent": {
+      "content": "id.articlecontent@html##<p[^<]+|[^>]+p>",
+      "nextContentUrl": "text.下一页@href",
+      "webJs": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "tag.td.2@text",
+      "bookList": "tag.tr!0",
+      "bookUrl": "tag.a.0@href",
+      "coverUrl": "",
+      "intro": "",
+      "kind": "tag.td.5@text",
+      "lastChapter": "{{@@tag.td.1@text}} {{@@tag.td.4@text}}",
+      "name": "tag.td.0@text",
+      "wordCount": "tag.td.3@text"
+    },
+    "ruleToc": {
+      "chapterList": ".ml_list li a",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "searchUrl": "https://www.su74.com/search.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"}",
+    "weight": 0
+  },
+  {
+    "bookSourceComment": "",
+    "bookSourceGroup": "下载,精校,📑已检",
+    "bookSourceName": "书荒部落.noveless",
+    "bookSourceType": 0,
+    "bookSourceUrl": "http://noveless.com",
+    "bookUrlPattern": "",
+    "customOrder": -38945,
+    "enabled": true,
+    "enabledExplore": false,
+    "lastUpdateTime": 1612229330637,
+    "loginUrl": "",
+    "ruleBookInfo": {
+      "author": "",
+      "coverUrl": "",
+      "init": "",
+      "intro": "class.list.0@ownText&&class.list.0@tag.a@href&&class.list.1@ownText&&class.list.1@tag.a@href@js:'若有压缩密码，密码为noveless.com<br>──────<br>'+result+'<br>──────<br>'+book.intro",
+      "kind": "",
+      "lastChapter": "",
+      "tocUrl": "",
+      "wordCount": "text.文件大小：@text##文件大小："
+    },
+    "ruleContent": {
+      "content": "@js:book.intro+'<img src=\"'+book.coverUrl+'\"/>'",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {},
+    "ruleSearch": {
+      "author": "##作者：(\\S+)##$1###",
+      "bookList": "tag.article",
+      "bookUrl": "h2 a@href##archives/##download.php?id=",
+      "coverUrl": "img@data-original",
+      "intro": "class.note@text##[\\S\\s]+(?=内容简介)|(内容简介|作者简介) (?:(\\S+)\\s(?=\\2))?|@get:{n}##$1<br>",
+      "kind": "##类别：(\\S+)##$1###\n@js:String(java.get('k')+','+result).replace(/\\[|\\]|,$/g,'')",
+      "lastChapter": "",
+      "name": "h2 a@text@put:{k:'@css:[rel]@text'}@js:java.put('n',result)##精校全本",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "@js:[{t:'下载链接',h:baseUrl}]",
+      "chapterName": "t",
+      "chapterUrl": "h"
+    },
+    "searchUrl": "https://noveless.com/page/{{page}}?s={{key}}",
+    "weight": 0
+  }
+]
