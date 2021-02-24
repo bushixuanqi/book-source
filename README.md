@@ -123,18 +123,18 @@
 <br><br/>
 # 书源相关链接
 <br><br/>
-全网搜书(Pro V29-5)：[https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json](https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json)
+全网搜书(Pro V30)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json)
 <br><br/>
-通用书源(V12-5)：[https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json](https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json)
+通用书源(V13)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json)
 <br><br/>
 ```
 导入“通用书源”后，将书籍详情页或目录页链接粘贴到书架右上角菜单的“添加网址”处，确认后书籍将直接出现在书架，点进书籍即可阅读。
 在导入的书籍链接后加“?”，然后跟着“单直跳全逆图字动静”中任意多个字或“[目录url]”或“数字#第二页链接#”，也能实现上面“简介设置单本”哪里描述的效果。
 ```
 <br><br/>
-书源合集(107=修复44+自制9+优化39+整理15)：[https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E4%B9%A6%E6%BA%90%E5%90%88%E9%9B%86(%E5%A4%B1%E6%95%88%E4%BF%AE%E5%A4%8D%20%E8%87%AA%E5%88%B6%20%E4%BC%98%E5%8C%96).json](https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E4%B9%A6%E6%BA%90%E5%90%88%E9%9B%86(%E5%A4%B1%E6%95%88%E4%BF%AE%E5%A4%8D%20%E8%87%AA%E5%88%B6%20%E4%BC%98%E5%8C%96).json)
+精校书源合集：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E7%B2%BE%E6%A0%A1%E4%B9%A6%E6%BA%90%E5%90%88%E9%9B%86.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E7%B2%BE%E6%A0%A1%E4%B9%A6%E6%BA%90%E5%90%88%E9%9B%86.json)
 <br><br/>
-网络导入->源仓库订阅：[https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E6%96%B0%E7%89%88%E6%BA%90%E4%BB%93%E5%BA%93%E8%AE%A2%E9%98%85.json](https://raw.githubusercontent.com/bushixuanqi/book-source/main/%E6%96%B0%E7%89%88%E6%BA%90%E4%BB%93%E5%BA%93%E8%AE%A2%E9%98%85.json)
+网络导入->源仓库订阅：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E6%96%B0%E7%89%88%E6%BA%90%E4%BB%93%E5%BA%93%E8%AE%A2%E9%98%85.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E6%96%B0%E7%89%88%E6%BA%90%E4%BB%93%E5%BA%93%E8%AE%A2%E9%98%85.json)
 <br><br/>
 <br><br/>
 
