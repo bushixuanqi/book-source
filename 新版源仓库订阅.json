@@ -1,0 +1,22 @@
+[{
+  "articleStyle": 1,
+  "customOrder": -10226,
+  "enableJs": false,
+  "enabled": true,
+  "header": "{\"X-Requested-With\": \"XMLHttpRequest\"}",
+  "loadWithBaseUrl": true,
+  "ruleArticles": "$.data",
+  "ruleContent": "",
+  "ruleDescription": "",
+  "ruleImage": "",
+  "ruleLink": "@js:baseUrl.replace(/\\/i.+/,\"/yuan/id/{{$.id}}\")",
+  "ruleNextPage": "@js:baseUrl.replace(/\\d+/,match=>Number(match)+1)",
+  "rulePubDate": "【{{$.username}}】{{$.time}}\n",
+  "ruleTitle": "{{$.yuansite}}{{$.themeName}}　搜{{$.sousuo}}发{{$.faxian}}声{{$.audio}}图{{$.tupian}}\n{{$.yuanurl}}\n@js:result.replace(/layui-bg-blue/g,'✔').replace(/layui-bg-gray layui-hide/g,'✘').replace(/\\$\\.(yuansite|themeName|yuanurl)|　搜(?:\\$\\.|发声)[^\\n]+/g,\"\")",
+  "singleUrl": false,
+  "sortUrl": "3.0发现::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=0&ver=3&faxian=1&sousuo=0&audio=0\"}\n3.0搜索::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=0&ver=3&faxian=0&sousuo=1&audio=0\"}\n3.0综合::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=0&ver=3&faxian=1&sousuo=1&audio=0\"}\n有图发现::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=1&faxian=1&sousuo=0\"}\n有图搜索::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=1&faxian=0&sousuo=1\"}\n有图综合::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=1&faxian=1&sousuo=1\"}\n有声发现::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&faxian=1&sousuo=0&audio=1\"}\n有声搜索::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&faxian=0&sousuo=1&audio=1\"}\n有声综合::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&faxian=1&sousuo=1&audio=1\"}\n订阅::http://yck.mumuceo.com/yuedu/rssyuan/index.html,{\"method\": \"POST\",\"body\": \"page=1&limit=500\"}\n主题::http://yck.mumuceo.com/yuedu/theme/index.html,{\"method\": \"POST\",\"body\": \"page=1&limit=500\"}\n2.0发现::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=0&ver=2&faxian=1&sousuo=0&audio=0\"}\n2.0搜索::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=0&ver=2&faxian=0&sousuo=1&audio=0\"}\n2.0综合::http://yck.mumuceo.com/yuedu/shuyuan/index.html,{\"method\":\"POST\",\"body\":\"page=1&limit=500&tupian=0&ver=2&faxian=1&sousuo=1&audio=0\"}",
+  "sourceGroup": "🔰资源",
+  "sourceIcon": "http://yck.mumuceo.com/static/images/applogo/yuedu.png",
+  "sourceName": "legado源库",
+  "sourceUrl": "http://yck.mumuceo.com"
+}]
