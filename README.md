@@ -109,11 +109,9 @@
 <br><br/>
 <br><br/>
 # 书源相关链接
+全网通用(阿里云)：[https://bushixuanqi.oss-cn-chengdu.aliyuncs.com/%E6%BA%90.json](https://bushixuanqi.oss-cn-chengdu.aliyuncs.com/%E6%BA%90.json) 
 <br><br/>
-全网搜书(Pro V31)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E5%85%A8%E7%BD%91%E6%90%9C%E4%B9%A6(%E7%99%BE%E5%BA%A6%E3%80%81%E8%B0%B7%E6%AD%8C%E3%80%81%E5%A4%B8%E5%85%8B).json)
-<br><br/>
-通用书源(V14)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json)
-<br><br/>
+全网通用(github)：[https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json](https://cdn.jsdelivr.net/gh/bushixuanqi/book-source/%E9%80%9A%E7%94%A8%E4%B9%A6%E6%BA%90.json)
 ```
 导入“通用书源”后，将书籍详情页或目录页链接粘贴到书架右上角菜单的“添加网址”处，确认后书籍将直接出现在书架，点进书籍即可阅读。
 在导入的书籍链接后加“?”，然后跟着“单直跳全逆原图字动静”中任意多个字或“[目录url]”或“数字#第二页链接#”，也能实现上面“简介设置单本”哪里描述的效果。
