@@ -1,4 +1,4 @@
-  _本书源为阅读APP书源配置文件_ 
+  _此仓库中文件为阅读APP书源配置文件_ 
 <b>阅读APP下载：</b>[http://www.legado.top/MyBookshelf/](http://www.legado.top/MyBookshelf/)
 #  :fa-list: 全网搜书用法
 ###  :fa-search: 搜索格式定向搜索目标书籍
